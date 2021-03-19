@@ -2,7 +2,7 @@ from rest_framework import generics
 from .serializer import PostSerializer
 from .models import Outfits
 
-class PostLists(generics.ListCreateAPIView):
+class PostList(generics.ListCreateAPIView):
     queryset = Outfits.objects.all()
     serializer_class = PostSerializer
 
